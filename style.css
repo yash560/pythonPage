@@ -1,0 +1,568 @@
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#overSection {
+  display: block;
+}
+
+.wrapper {
+  max-width: 100vw !important;
+  transition: 0.5s ease-in-out !important;
+  overflow: hidden;
+}
+.section1 {
+  width: 100vw;
+  height: 60vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  background-color: #232a3d;
+}
+.section1 div img {
+  width: 100px;
+}
+.section1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section1 div h1 {
+  margin-bottom: 1rem;
+  font-size: 45px;
+}
+.section1 div div {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  color: #0a182e;
+  font-size: 0.8rem;
+}
+.overview {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 5rem;
+}
+.course {
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 5rem;
+}
+.sectionThree {
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 5rem;
+}
+.overviewLeft {
+  width: 60%;
+}
+.overviewRight {
+  width: 40%;
+  display: grid;
+  place-items: center;
+}
+.rightBar {
+  width: 80%;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.rightBar div {
+  display: grid;
+  padding: 1rem;
+  place-items: center;
+}
+.rightBar div h5 {
+  font-weight: normal;
+}
+.rightBar div h1,
+.sectionThree h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  color: rgba(10, 24, 46, 0.8);
+}
+.toggleHeader {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  height: max-content;
+  height: max-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+#more {
+  display: none;
+}
+
+.toggleHeader h1 {
+  padding: 1rem;
+
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 82px;
+  text-align: left;
+}
+.toggleHeader h1:hover {
+  cursor: pointer;
+  color: #3a10e5;
+}
+.purple {
+  color: #3a10e5;
+}
+
+.overBody h1 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 61px;
+  padding-left: 2rem;
+  margin: 1rem 0 0 2rem;
+  color: #0a182e;
+
+  text-align: left;
+}
+.overBody p {
+  font-size: large;
+  color: #0a182e;
+  line-height: 25px;
+  padding-left: 4rem;
+  margin: 1rem 0 0 2rem;
+  text-align: left;
+}
+.course h1 {
+  color: #222e4e;
+  font-size: 30px;
+}
+.course div {
+  width: 80%;
+  min-height: 5rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+.course button {
+  background: #3a10e5;
+  border: 1px solid #3a10e5;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  justify-self: center;
+  margin: auto;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.commonButton {
+  background: #3a10e5;
+  border: 1px solid #3a10e5;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  cursor: pointer;
+  margin-top: 1rem;
+  justify-self: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.courseItem {
+  background: #ffffff;
+  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  width: 50%;
+  height: max-content;
+  display: flex;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-left: 3px solid #3a10e5;
+}
+.courseItem div {
+  padding: 1rem;
+  margin: 0;
+}
+.courseItem button {
+  background: #ffffff;
+  border: 1px solid #3a10e5;
+  box-sizing: border-box;
+  height: fit-content;
+  color: #3a10e5;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.courseItem button:hover {
+  background: #3a10e5;
+  cursor: pointer;
+  color: #fff;
+}
+.courseItem div h1 {
+  font-size: 26px;
+  color: #3a10e5;
+}
+.courseItem div p {
+  font-size: 16px;
+  color: #0a182e;
+  padding-left: 1.8rem;
+}
+.courseItem div span {
+  padding-left: 1.8rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 1rem;
+}
+.courseItem div span h6 {
+  margin: 0.5rem;
+}
+
+.sectionThree div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.sectionThree div div h2 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 0.5rem;
+  line-height: 29px;
+  color: #0a182e;
+}
+.sectionThree div div h5 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 29px;
+  color: #0a182e;
+}
+.testimonial {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+  flex-direction: row;
+}
+.sectionThree div div {
+  display: flex;
+  padding: 0 3rem;
+  flex-direction: column;
+  width: 50%;
+}
+.carousel-inner {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.rightArrow {
+  position: absolute;
+  cursor: pointer;
+  right: 25px;
+  top: 45%;
+  z-index: 100;
+  height: 50px;
+}
+.leftArrow {
+  position: absolute;
+  cursor: pointer;
+  left: -10px;
+  z-index: 100;
+  z-index: 10;
+  top: 45%;
+  height: 50px;
+}
+.testimonialCard {
+  margin: 0 2rem;
+  width: 250px;
+  padding: 00.8rem;
+  min-height: 300px;
+  background: #d7e5ff;
+  color: #0a182e;
+  border-radius: 20px;
+}
+.testimonialCard h3 {
+  margin-top: 2rem;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #0a182e;
+}
+.testimonialCard div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+.testimonialCard div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: -2rem;
+}
+.testimonialCard div div h5 {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: normal;
+  color: #0a182e;
+  padding-left: 1rem;
+  word-wrap: break-word;
+}
+.testimonialCard div div h1 {
+  font-size: 25px;
+  line-height: 19px;
+  font-weight: bold;
+  color: #0a182e;
+  padding-left: 1rem;
+  word-wrap: break-word;
+}
+.head {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 61px;
+  margin: auto;
+  width: fit-content;
+  color: #0a182e;
+}
+
+.Questions {
+  background: #a6b3cc !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  padding: 1rem !important;
+  font-weight: bold;
+  width: 50%;
+  border-radius: 0.5rem;
+  border: none !important;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.icon {
+  height: 25px;
+  font-weight: bold;
+}
+.Questions:hover {
+  background-color: #555;
+}
+
+.QuestionsContent {
+  background: #a6b3cc !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  display: none;
+  padding: 1rem !important;
+  width: 50%;
+  border: none !important;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.QuestionsContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+#SyllabusSection {
+  display: none;
+}
+#SyllabusSection div {
+  width: 80%;
+  margin: auto;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#SyllabusSection div div {
+  background: #ffffff;
+  border: 1px solid #0a182e;
+  box-sizing: border-box;
+  margin: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 280px;
+  padding: 0;
+  align-items: center;
+  justify-content: start;
+}
+#SyllabusSection div div img {
+  width: 150px;
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+}
+#SyllabusSection div div h4 {
+  font-weight: bold;
+  width: 100%;
+  padding: 0 1rem;
+}
+#SyllabusSection div div span {
+  width: 100%;
+  padding: 0 1rem;
+
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+#SyllabusSection div div h6 {
+  width: 100%;
+  font-size: 12px;
+  padding: 0 1rem;
+}
+#SyllabusSection div div button {
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 29px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  background: #0a182e;
+  border-radius: 0px 30px 0 0;
+  outline: none;
+  border: none;
+  color: #ffffff;
+}
+@media (max-width: 1000px) {
+  .course div {
+    width: 100%;
+    min-height: 5rem;
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  .QuestionsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+  .sectionThree div div {
+    padding: 0;
+    width: 100%;
+  }
+  .rightBar {
+    width: 300px;
+  }
+  .overBody h1 {
+    padding-left: 1rem;
+  }
+  .overBody p {
+    padding: 0 0.5rem;
+  }
+  .overview {
+    padding: 1rem 0rem;
+    margin: auto;
+    flex-direction: column;
+  }
+  .overviewRight {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .overviewLeft {
+    width: 100%;
+  }
+
+  .testimonial {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .head {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 61px;
+    margin: auto;
+    max-width: 100vw;
+    color: #0a182e;
+  }
+  .Questions {
+    width: 80%;
+  }
+  .sectionThree {
+    padding: 2rem;
+  }
+  .sectionThree div {
+    flex-direction: column;
+  }
+  .sectionThree div div {
+    width: 100%;
+  }
+  .courseItem div span h6 {
+    margin: 0.5rem;
+  }
+  .courseItem div span {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .course {
+    padding: 2rem;
+    width: 100vw;
+  }
+  .course div {
+    width: 100%;
+  }
+  .courseItem {
+    padding: 1rem 0.5rem;
+    margin: 1rem 0;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .toggleHeader {
+    width: 100%;
+    display: flex;
+    height: max-content;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .toggleHeader h1 {
+    padding: 1rem;
+
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: left;
+  }
+}
