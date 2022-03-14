@@ -539,138 +539,33 @@
       </section>
       <section>
         <h1 class="head">Frequently Asked Questions</h1>
-        <div class="QuestionsContainer">
-          <button class="Questions">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              /></svg
-            >Open Collapsible
-          </button>
-          <div class="QuestionsContent">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
+<div class="row">
+  <div class="col">
+    <div class="tabs">
+      <div class="tab">
+        <input type="checkbox" id="chck1">
+        <label class="tab-label" for="chck1">Item 1</label>
+        <div class="tab-content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
         </div>
-        <div class="QuestionsContainer">
-          <button class="Questions">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              /></svg
-            >Open Collapsible
-          </button>
-          <div class="QuestionsContent">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck2">
+        <label class="tab-label" for="chck2">Item 2</label>
+        <div class="tab-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
         </div>
-        <div class="QuestionsContainer">
-          <button class="Questions">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              /></svg
-            >Open Collapsible
-          </button>
-          <div class="QuestionsContent">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-        </div>
-        <div class="QuestionsContainer">
-          <button class="Questions">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              /></svg
-            >Open Collapsible
-          </button>
-          <div class="QuestionsContent">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-        </div>
-        <div class="QuestionsContainer">
-          <button class="Questions">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              /></svg
-            >Open Collapsible
-          </button>
-          <div class="QuestionsContent">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+      
+      
       </section>
     </section>
+    </section>
+    
     <!-- <section id="SyllabusSection">
      
       <div>
@@ -800,37 +695,6 @@
       over.style.display = "none";
     syll.style.display = "block";
   });
-    var coll = document.getElementsByClassName("Questions");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-    function myFunction() {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
-
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "View more";
-        moreText.style.display = "none";
-        moreText.style.transition ="1s ease";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "View less";
-        moreText.style.display = "inline";
-        moreText.style.transition ="1s ease";
-
-      }
-    }
+    
   </script>
 </html>
